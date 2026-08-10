@@ -1,0 +1,10 @@
+path: E:\blood detect\dataset
+train: train/images
+val: val/images
+test: test/images
+
+nc: 3
+names:
+  0: WBC
+  1: RBC
+  2: Platelets

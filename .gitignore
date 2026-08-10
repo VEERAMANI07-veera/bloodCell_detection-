@@ -1,0 +1,22 @@
+# Dependencies
+node_modules/
+__pycache__/
+*.pyc
+
+# Dataset and Models
+archive (8).zip
+dataset/
+test/
+train/
+val/
+runs/
+*.pt
+
+# Uploads
+backend/uploads/
+backend/results/
+
+# Build and Temp
+frontend/dist/
+.env
+.DS_Store
