@@ -12,7 +12,7 @@ const DetectionTable = ({ detections }) => {
   });
 
   const getRowStyle = (className) => {
-    switch(className) {
+    switch (className) {
       case 'RBC': return { borderLeft: '4px solid var(--rbc-color)' };
       case 'WBC': return { borderLeft: '4px solid var(--wbc-color)' };
       case 'Platelets': return { borderLeft: '4px solid var(--platelet-color)' };
@@ -24,21 +24,21 @@ const DetectionTable = ({ detections }) => {
     <div className="glass-panel" style={{ padding: '20px' }}>
       <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: '15px', marginBottom: '20px' }}>
         <h3 style={{ margin: 0 }}>Detailed Detections ({filteredDetections.length})</h3>
-        
+
         <div style={{ display: 'flex', gap: '15px' }}>
           <div style={{ position: 'relative' }}>
             <Search size={16} color="#888" style={{ position: 'absolute', left: '10px', top: '10px' }} />
-            <input 
-              type="text" 
-              placeholder="Search ID or Class..." 
+            <input
+              type="text"
+              placeholder="Search ID or Class..."
               value={searchTerm}
               onChange={(e) => setSearchTerm(e.target.value)}
               style={{ background: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.2)', padding: '8px 10px 8px 35px', borderRadius: '4px', color: '#fff' }}
             />
           </div>
-          
-          <select 
-            value={filter} 
+
+          <select
+            value={filter}
             onChange={(e) => setFilter(e.target.value)}
             style={{ background: 'rgba(0,0,0,0.5)', border: '1px solid rgba(255,255,255,0.2)', padding: '8px 15px', borderRadius: '4px', color: '#fff' }}
           >
