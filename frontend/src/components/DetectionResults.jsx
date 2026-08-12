@@ -3,7 +3,7 @@ import Charts from './Charts';
 import DetectionTable from './DetectionTable';
 import DetectionSummary from './DetectionSummary';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000';
+const API_URL = (import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000').replace(/\/$/, '');
 
 const DetectionResults = ({ data }) => {
   if (!data || !data.success) return null;

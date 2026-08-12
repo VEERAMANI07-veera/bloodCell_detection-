@@ -1,4 +1,4 @@
-import { Activity, Menu } from 'lucide-react';
+import { Activity } from 'lucide-react';
 
 const Navbar = () => {
   return (

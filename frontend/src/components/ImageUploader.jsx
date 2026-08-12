@@ -2,7 +2,7 @@ import { useState, useRef } from 'react';
 import { UploadCloud, X, Image as ImageIcon } from 'lucide-react';
 import axios from 'axios';
 
-const API_URL = import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000';
+const API_URL = (import.meta.env.VITE_API_URL || 'http://127.0.0.1:5000').replace(/\/$/, '');
 
 const ImageUploader = ({ onStart, onSuccess, onError }) => {
   const [dragActive, setDragActive] = useState(false);
