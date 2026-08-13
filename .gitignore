@@ -1,22 +1,41 @@
-# Dependencies
-node_modules/
-__pycache__/
-*.pyc
 
+!.vscode/extensions.json
+# Build and Temp
 # Dataset and Models
+# Dependencies
+# Editor directories and files
+# Logs
+# Uploads
+*.local
+*.log
+*.njsproj
+*.ntvs*
+*.pt
+*.pyc
+*.sln
+*.suo
+*.sw?
+.DS_Store
+.env
+.idea
+.vscode/*
+__pycache__/
 archive (8).zip
+backend/results/
+backend/uploads/
 dataset/
+dist
+dist-ssr
+frontend/dist/
+lerna-debug.log*
+logs
+node_modules
+node_modules/
+npm-debug.log*
+pnpm-debug.log*
+runs/
 test/
 train/
 val/
-runs/
-*.pt
-
-# Uploads
-backend/uploads/
-backend/results/
-
-# Build and Temp
-frontend/dist/
-.env
-.DS_Store
+yarn-debug.log*
+yarn-error.log*
